@@ -50,9 +50,13 @@
     >
       <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
       <a-entity
-        geometry="primitive: box; width: 4" material="color: red"
-        scale="50 50 50"
-        position="0 0 0"
+         <a-assets>
+    <img id="my-image" src="https://freight.cargo.site/t/original/i/f47da608407aeb8ded9471d19a5d8569743e192eda6fce2dfba081cafd333f04/IMG_0093.GIF">
+  </a-assets>
+
+  <!-- Using the asset management system. -->
+  <a-image src="#my-image" position="0 0 0" width="1" height="1"></a-image>
+
       >
       </a-entity>
     </a-nft>
@@ -61,6 +65,7 @@
   </a-scene>
 
 </body>
+
 
 
 
