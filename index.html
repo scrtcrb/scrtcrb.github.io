@@ -9,7 +9,7 @@
     <a-scene mindar-image="imageTargetSrc: ./carteCrabe.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
 		vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-	<img id="hand" src="https://freight.cargo.site/w/397/q/94/i/f47da608407aeb8ded9471d19a5d8569743e192eda6fce2dfba081cafd333f04/IMG_0093.GIF" />
+	<img id="hand" src="hand.GIF" crossorigin="anonymous" />
 	
       </a-assets>
 
@@ -19,12 +19,13 @@
          <a-entity
           geometry="primitive:plane;width:1;height:1;"
           position="0 0 0"
-          gif-shader="src:#hand;color:orange;"
+          gif-shader="src:#hand;color:green;"
         ></a-entity>
 	  </a-entity>
     </a-scene>
   </body>
 </html>
+
 
 
 
