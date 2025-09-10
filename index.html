@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/gloomcheng/aframe-gif-shader@latest/dist/aframe-gif-shader.min.js"></script>
   </head>
@@ -16,8 +16,8 @@
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane position="0 0 0" height="1" width="1" rotation="0 0 0" 
-			gif-shader="src: https://raw.githubusercontent.com/gloomcheng/aframe-gif-shader/refs/heads/master/examples/basic/banana.gif;
+        <a-plane position="0 0 0" height="1" width="0.8" rotation="0 0 0" 
+			gif-shader="src: #hand;
 			autoplay: true;
 			repeat: 1 1;
   			opacity: 1.0;
@@ -26,6 +26,7 @@
     </a-scene>
   </body>
 </html>
+
 
 
 
