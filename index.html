@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/gloomcheng/aframe-gif-shader@latest/dist/aframe-gif-shader.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: ./carteCrabe.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
@@ -16,16 +16,13 @@
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
-        <a-plane position="0 0 0" height="1" width="0.8" rotation="0 0 0" 
-			gif-shader="src: #hand;
-			autoplay: true;
-			repeat: 1 1;
-  			opacity: 1.0;
-  			transparent: true;" ></a-plane>
+        <a-plane material="src: #hand" position="0 0 0" height="0.8" width="1" rotation="0 0 0" 
+			</a-plane>
       </a-entity>
     </a-scene>
   </body>
 </html>
+
 
 
 
