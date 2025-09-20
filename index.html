@@ -10,7 +10,7 @@
     <a-scene mindar-image="imageTargetSrc: ./carteCrabe.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
 		vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-	<img id="hand" src="hand.GIF" crossorigin="anonymous" />
+	<img id="hand" src="https://github.com/mayognaise/aframe-gif-shader/blob/95f9f7ddd01a247cf07afac583934bb79aafaeff/examples/basic/banana.gif" crossorigin="anonymous" />
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -19,11 +19,12 @@
          <a-entity
           geometry="primitive:plane;width:1;height:0.7;"
           position="0 0 0"
-		  material="shader:gif;src: #hand;alphaTest:0.5;"></a-entity>
+		  material="shader:gif;src:#hand;alphaTest:0.5;"></a-entity>
 	  </a-entity>
     </a-scene>
   </body>
 </html>
+
 
 
 
