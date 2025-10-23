@@ -3,9 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-	<!-- Using jsDelivr CDN (Recommended) -->
-	<script src="https://cdn.jsdelivr.net/gh/gloomcheng/aframe-gif-shader@latest/dist/aframe-gif-shader.min.js"></script>
- 	<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
   <body>
     <a-scene mindar-image="imageTargetSrc: ./carteCrabe.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
@@ -20,12 +18,13 @@
          <a-entity
           geometry="primitive:plane;width:1;height:0.8;"
           position="0 0 0"
-		  material="blue"></a-entity>
+		  material="color: red"></a-entity>
 	  </a-entity>
 
     </a-scene>
   </body>
 </html>
+
 
 
 
