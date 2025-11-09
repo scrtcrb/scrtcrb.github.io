@@ -8,18 +8,32 @@
 
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: ./carteCrabe.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
+    <a-scene mindar-image="imageTargetSrc: ./Sticker.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" 
 		vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-	<img id="hand" src="hand.GIF" crossorigin="anonymous" />
+	<img id="CoolDog" src="spritesheet/CoolDog"/>
 	<img id="MoonMage" src="spritesheet/MoonMage.png"/>	
+	<img id="Sneaky" src="spritesheet/Sneaky.png"/>	
+
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0">
          <a-entity
-          geometry="primitive:plane;width:1;height:0.8;"
+          geometry="primitive:plane;width:1;height:1;"
+          position="0 0 0"
+		  material="shader: standard; src: #MoonMage; transparent: true; " spritesheet-animation="rows: 2; columns: 12; frameDuration: 0.04; loop: true;"></a-entity>
+	  </a-entity>
+	 <a-entity mindar-image-target="targetIndex: 1">
+         <a-entity
+          geometry="primitive:plane;width:1;height:1;"
+          position="0 0 0"
+		  material="shader: standard; src: #MoonMage; transparent: true; " spritesheet-animation="rows: 2; columns: 12; frameDuration: 0.04; loop: true;"></a-entity>
+	  </a-entity>
+		  <a-entity mindar-image-target="targetIndex: 2">
+         <a-entity
+          geometry="primitive:plane;width:1;height:1;"
           position="0 0 0"
 		  material="shader: standard; src: #MoonMage; transparent: true; " spritesheet-animation="rows: 2; columns: 12; frameDuration: 0.04; loop: true;"></a-entity>
 	  </a-entity>
@@ -27,6 +41,7 @@
     </a-scene>
   </body>
 </html>
+
 
 
 
