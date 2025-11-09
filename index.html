@@ -12,7 +12,7 @@
 		vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
 	<img id="hand" src="hand.GIF" crossorigin="anonymous" />
-	<img id="sheet" src="MoonMage_Spritesheet/MoonMage_spritesheet.png"/>	
+	<img id="MoonMage" src="spritesheet/MoonMage.png"/>	
       </a-assets>
 
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
@@ -21,12 +21,13 @@
          <a-entity
           geometry="primitive:plane;width:1;height:0.8;"
           position="0 0 0"
-		  material="shader: standard; src: #sheet; transparent: true; " spritesheet-animation="rows: 1; columns: 24; frameDuration: 0.08; loop: true;"></a-entity>
+		  material="shader: standard; src: #MoonMage; transparent: true; " spritesheet-animation="rows: 2; columns: 12; frameDuration: 0.04; loop: true;"></a-entity>
 	  </a-entity>
 
     </a-scene>
   </body>
 </html>
+
 
 
 
